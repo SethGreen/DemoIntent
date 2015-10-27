@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".CapitalizedTextActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/capitalized_prompt"
+        android:id="@+id/tvCapitalized"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svCapitalized"
+        android:layout_below="@+id/tvCapitalized"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/bClearCapitalized">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etCapitalized"
+            android:hint="@string/capitalized_hint" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/bClearCapitalized"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

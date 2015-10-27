@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".PlainTextActivity">
+
+    <!-- TODO notice the changes I've made to the menu items. -->
+    <item
+        android:id="@+id/action_about"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:orderInCategory="80"
+        android:title="@string/action_about"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+</menu>
